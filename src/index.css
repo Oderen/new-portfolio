@@ -1,15 +1,60 @@
-@import-normalize; /* bring in normalize.css styles */
+/* :root {
+  --primary-bg-color: #fff;
+  --field-bg--color: #f7f7fb;
+  --button-bg-color: #3470ff;
+  --accent-button-bg-color: rgba(11, 68, 205, 1);
+  --parametr-text-color: rgba(18, 20, 23, 0.2);
+
+  --primary-text-color: #121417;
+  --description-text-color: #8a8a89;
+  --card--details-text--color: rgba(18, 20, 23, 0.5);
+
+  --heart-outline-color: rgba(255, 255, 255, 0.8);
+} */
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Montserrat, sans-serif;
+  background-color: gray;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0px;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  width: 8px;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--card--details-text--color);
+}
+
+.container {
+  width: 1208px;
+  padding: 0px 12px;
 }
