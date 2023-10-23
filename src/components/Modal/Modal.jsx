@@ -88,7 +88,12 @@ const Modal = ({ isModalOpen, closeModal }) => {
           >
             <BsEye className={css.modal__icon} />
             {visual__link ? (
-              <a href={visual__link} className={css.modal__link}>
+              <a
+                href={visual__link}
+                className={css.modal__link}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 Visual Part
               </a>
             ) : (

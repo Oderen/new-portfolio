@@ -20,18 +20,30 @@ const Header = () => {
           <li className={css.item}>
             <a
               className={css.link}
+              target="_blank"
+              rel="noreferrer noopener"
               href="https://www.linkedin.com/in/oleksandr-deren/"
             >
               <BiLogoLinkedin className={css.icon} />
             </a>
           </li>
           <li className={css.item}>
-            <a className={css.link} href="https://t.me/OleksandrDeren">
+            <a
+              className={css.link}
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://t.me/OleksandrDeren"
+            >
               <BiLogoTelegram className={css.icon} />
             </a>
           </li>
           <li className={css.item}>
-            <a className={css.link} href="https://github.com/Oderen">
+            <a
+              className={css.link}
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/Oderen"
+            >
               <BiLogoGithub className={css.icon} />
             </a>
           </li>
@@ -39,6 +51,8 @@ const Header = () => {
 
         <a
           href="https://drive.google.com/file/d/1IFSXCRe73cY3zzlW4NC_BgBvDWAWFXU_/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer noopener"
           className={css.cv}
         >
           My resume

@@ -149,6 +149,8 @@ const HomePage = () => {
                     <BiLogoLinkedin className={css.socials__icon} />
                   </div>
                   <a
+                    target="_blank"
+                    rel="noreferrer noopener"
                     className={css.socials__link}
                     href="https://www.linkedin.com/in/oleksandr-deren/"
                   >
@@ -162,6 +164,8 @@ const HomePage = () => {
                     <BiLogoTelegram className={css.socials__icon} />
                   </div>
                   <a
+                    target="_blank"
+                    rel="noreferrer noopener"
                     className={css.socials__link}
                     href="https://t.me/OleksandrDeren"
                   >
@@ -175,6 +179,8 @@ const HomePage = () => {
                     <BiLogoGithub className={css.socials__icon} />
                   </div>
                   <a
+                    target="_blank"
+                    rel="noreferrer noopener"
                     className={css.socials__link}
                     href="https://github.com/Oderen"
                   >
