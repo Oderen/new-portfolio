@@ -1,11 +1,5 @@
-import React from 'react';
-
-const SecondPage = () => {
-  return (
-    <div>
-      <h1>SecondPage</h1>
-    </div>
-  );
-};
+function SecondPage() {
+  return <div></div>;
+}
 
 export default SecondPage;

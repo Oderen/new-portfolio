@@ -1,0 +1,42 @@
+.toggleButtons {
+  width: fit-content;
+
+  border-radius: 20px;
+  border: 2px solid var(--orange);
+}
+
+.toggleButtons__btn {
+  width: 120px;
+
+  color: white;
+
+  padding: 15px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+
+  transition: all 250ms linear;
+}
+
+.toggleButtons__btn:first-child {
+  border-right: 2px solid var(--orange);
+  border-radius: 0px;
+  border-bottom-left-radius: 18px;
+  border-top-left-radius: 18px;
+}
+
+.toggleButtons__btn:nth-child(2) {
+  border-radius: 0px;
+  border-bottom-right-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.toggleButtons__btn:hover {
+  background-color: rgb(54, 53, 53);
+}

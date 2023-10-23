@@ -1,20 +1,27 @@
-/* :root {
-  --primary-bg-color: #fff;
-  --field-bg--color: #f7f7fb;
-  --button-bg-color: #3470ff;
-  --accent-button-bg-color: rgba(11, 68, 205, 1);
-  --parametr-text-color: rgba(18, 20, 23, 0.2);
-
-  --primary-text-color: #121417;
-  --description-text-color: #8a8a89;
-  --card--details-text--color: rgba(18, 20, 23, 0.5);
-
-  --heart-outline-color: rgba(255, 255, 255, 0.8);
-} */
+:root {
+  --orange: #ff6c00;
+  --white: #ffff;
+  --gray: #cccccc;
+  --black: #303030;
+  --header: #rgba(157, 164, 189, 0.6);
+}
 
 body {
   font-family: Montserrat, sans-serif;
   background-color: gray;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+p::selection,
+a::selection,
+span::selection {
+  color: white;
+  background-color: var(--orange);
 }
 
 ul {
@@ -45,16 +52,17 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  width: 8px;
-  border-radius: 10px;
+  width: 1px;
+  background-color: var(--black);
 }
 
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: var(--card--details-text--color);
+  background-color: var(--orange);
 }
 
 .container {
-  width: 1208px;
+  width: 1400px;
   padding: 0px 12px;
+  margin: 0px auto;
 }

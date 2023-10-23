@@ -1,0 +1,33 @@
+.about {
+  height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #1a1a1a;
+}
+
+.about__title {
+  color: var(--orange);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-block {
+  display: flex;
+
+  width: 100%;
+  height: 550px;
+}
+
+.left-side {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  margin-right: 15px;
+}
+
+.right-side {
+  width: 80%;
+  height: 100%;
+  margin-top: -60px;
+}

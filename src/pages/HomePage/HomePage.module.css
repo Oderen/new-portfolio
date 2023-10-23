@@ -1,0 +1,187 @@
+.projects-container {
+  padding-top: 50px;
+  padding-bottom: 130px;
+  background-color: #111;
+  height: auto;
+}
+
+.experience-container {
+  padding: 50px 0px;
+  background-color: #1a1a1a;
+  height: 100vh;
+}
+
+.experience__title {
+  width: 100%;
+  text-align: center;
+
+  margin-bottom: 40px;
+  color: var(--orange);
+  font-size: 50px;
+}
+
+.contact-container {
+  padding: 50px 0px;
+  background-color: #111;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.contact__title {
+  width: 100%;
+  text-align: center;
+
+  margin-bottom: 40px;
+  color: var(--orange);
+  font-size: 50px;
+}
+
+.list {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+
+  transition: all 250ms linear;
+
+  cursor: pointer;
+}
+
+.item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.item:hover,
+.item:focus {
+  background-color: white;
+}
+
+.icon {
+  width: 50%;
+  height: 50%;
+  color: white;
+
+  transition: all 250ms linear;
+}
+
+.item:hover .icon,
+.item:focus .icon {
+  color: var(--orange);
+}
+
+/* Line */
+.a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-right: 20px;
+}
+
+.circle {
+  background-color: transparent;
+  border: 2px solid var(--orange);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+
+  transition: all 250ms linear;
+  cursor: pointer;
+}
+
+.circle:hover {
+  background-color: var(--orange);
+}
+
+.line {
+  background-color: var(--orange);
+  width: 1px;
+  height: 135px;
+}
+
+/* Card */
+
+.card__time {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+/* Contact */
+.socials {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.socials__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+
+  border-radius: 50%;
+
+  background-color: black;
+
+  transition: all 250ms linear;
+}
+
+.socials__circle:hover {
+  background-color: white;
+}
+
+.socials__icon {
+  width: 50%;
+  height: 50%;
+  color: white;
+
+  transition: all 250ms linear;
+}
+
+.socials__circle:hover .socials__icon {
+  color: var(--orange);
+}
+
+.email {
+  font-size: 20px;
+  font-weight: 500;
+
+  transition: all 250ms linear;
+}
+
+.email:hover {
+  color: var(--orange);
+}
+
+.socials__link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+
+  transition: all 250ms linear;
+}
+
+.socials__link:hover {
+  color: var(--orange);
+}

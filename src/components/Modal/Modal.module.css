@@ -1,0 +1,172 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  margin: auto;
+
+  width: 541px;
+  height: auto;
+  padding: 30px;
+  background-color: #1a1a1a;
+  border-radius: 24px;
+  box-shadow: -2px 6px 10px 0px rgba(255, 255, 255, 0.15);
+
+  transform: translate(-50%, -20%) scale(0.2);
+  transition: all 250ms linear;
+}
+
+.modal__button {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24px;
+  height: 24px;
+  padding: 0px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__closeBtn {
+  width: 100%;
+  height: 100%;
+
+  color: white;
+  transition: all 250ms linear;
+}
+
+.modal__closeBtn:hover {
+  color: var(--orange);
+}
+
+.modal__photo {
+  border: 3px solid var(--orange);
+}
+
+.img-frontdrop {
+  position: absolute;
+  top: 0px;
+  height: 0px;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__link {
+  color: gray;
+  transition: all 250ms linear;
+}
+
+.modal__link:hover {
+  color: var(--orange);
+}
+
+.modal__icon {
+  color: white;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+
+  transition: all 250ms linear;
+}
+
+.modal__icon:hover {
+  color: var(--orange);
+}
+
+.modal__technologies {
+  width: fit-content;
+
+  margin-top: 20px;
+  padding-bottom: 5px;
+
+  font-weight: 700;
+  color: white;
+
+  border-bottom: 2px solid var(--orange);
+}
+
+/* ------------------------------------- */
+
+.stack {
+  padding: 20px;
+  padding-bottom: 0px;
+  padding-left: 40px;
+}
+
+.stack__title {
+  color: white;
+
+  margin-bottom: 10px;
+
+  border-bottom: 3px solid var(--orange);
+  width: fit-content;
+  padding-bottom: 5px;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.stack__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stack__item {
+  background-color: transparent;
+
+  width: fit-content;
+
+  margin-top: 10px;
+  padding: 7px;
+
+  border: 1px solid rgba(231, 224, 224, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+.stack__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.stack__item:hover,
+.stack__item:focus {
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+.stack__technology {
+  color: rgba(231, 224, 224, 0.5);
+  font-weight: 600;
+  transition: all 250ms linear;
+}
+
+.stack__item:hover .stack__technology,
+.stack__item:focus .stack__technology {
+  color: white;
+}

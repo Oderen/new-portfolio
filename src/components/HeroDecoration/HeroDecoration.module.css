@@ -1,0 +1,24 @@
+.decoration {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* gap: 50px; */
+}
+
+.decoration__icon {
+  color: #1a1a1a;
+
+  width: 110px;
+  height: 110px;
+
+  transition: all 250ms linear;
+}
+
+.decoration__icon:hover {
+  color: var(--orange);
+}

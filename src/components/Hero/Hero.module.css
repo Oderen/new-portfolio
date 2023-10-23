@@ -1,0 +1,29 @@
+.hero {
+  padding-top: 180px;
+  background-color: #111;
+  height: 110vh;
+}
+
+.info {
+  width: 100%;
+  padding: 20px;
+  border-radius: 70px;
+}
+
+.info__title {
+  margin-bottom: 30px;
+
+  color: #fff;
+
+  font-size: 80px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.info__description {
+  width: 850px;
+
+  color: white;
+  font-size: 35px;
+  font-weight: 400;
+}

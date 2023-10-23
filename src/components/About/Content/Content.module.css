@@ -1,0 +1,26 @@
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.content__text {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  word-spacing: 4px;
+}
+
+.first-letter::first-letter {
+  font-family: 'Tahoma', sans-serif;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  initial-letter: 2;
+
+  font-size: 30px;
+  font-weight: 500;
+
+  color: var(--orange);
+}

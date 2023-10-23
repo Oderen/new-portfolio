@@ -1,0 +1,130 @@
+.projects__item {
+  width: 400px;
+
+  border-radius: 21px;
+
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+.projects__item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.photos {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  transform: scale(1);
+  transition: all 250ms linear;
+}
+
+.projects__item:hover [anim] {
+  transform: scale(1.1);
+}
+
+.click-me {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 20px;
+
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.15);
+  transition: all 250ms linear;
+}
+
+.click-me__text {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+
+  opacity: 0;
+
+  transition: all 250ms linear;
+}
+
+.projects__item:hover,
+.projects__item:focus {
+  box-shadow: -12px 12px 34px 2px rgba(77, 77, 77, 0.65);
+}
+
+.projects__item:hover .click-me {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.projects__item:hover .click-me__text {
+  opacity: 1;
+}
+
+.projects__description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 110px;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: 250ms linear;
+}
+
+.progress-indicator {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100px;
+}
+
+.indicator__icon {
+  width: 12px;
+  height: 12px;
+
+  margin-right: 8px;
+
+  border-radius: 50%;
+}
+
+.indicator__text {
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.indicator__title {
+  margin-bottom: 10px;
+  color: var(--orange);
+  font-size: 20px;
+  font-weight: 600;
+}
