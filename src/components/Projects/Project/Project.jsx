@@ -2,7 +2,7 @@ import React from 'react';
 import css from './Project.module.css';
 
 const Project = ({
-  openModal,
+  setIsModalOpen,
   imgName,
   Icon,
   indicator,
@@ -11,7 +11,7 @@ const Project = ({
   description,
 }) => {
   return (
-    <li className={css.projects__item} onClick={openModal}>
+    <li className={css.projects__item} onClick={() => setIsModalOpen(title)}>
       <div
         className={css['image-container']}
         style={{

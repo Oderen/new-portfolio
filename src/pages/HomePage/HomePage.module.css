@@ -22,7 +22,7 @@
 
 .contact-container {
   padding: 50px 0px;
-  background-color: #111;
+  background-color: #1a1a1a;
 }
 
 .contact {
@@ -120,6 +120,7 @@
 .card__time {
   color: gray;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 /* Contact */

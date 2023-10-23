@@ -38,43 +38,11 @@ const Header = () => {
         </ul>
 
         <a
-          href="https://drive.google.com/file/d/11DUiu9_Bpq6tHLoQdTR3VLgLHH6_BQih/view"
+          href="https://drive.google.com/file/d/1IFSXCRe73cY3zzlW4NC_BgBvDWAWFXU_/view?usp=sharing"
           className={css.cv}
         >
           My resume
         </a>
-
-        {/* <nav className={css.navigation}>
-          <ul className={css.navigation__list}>
-            <li className={css.navigation__item}>
-              <NavLink
-                to="/"
-                className={css.navigation__link}
-                style={({ isActive }) => (isActive ? activeStyles : undefined)}
-              >
-                Home
-              </NavLink>
-            </li>
-            <li className={css.navigation__item}>
-              <NavLink
-                to="/second"
-                className={css.navigation__link}
-                style={({ isActive }) => (isActive ? activeStyles : undefined)}
-              >
-                Second
-              </NavLink>
-            </li>
-            <li className={css.navigation__item}>
-              <NavLink
-                to="/third"
-                className={css.navigation__link}
-                style={({ isActive }) => (isActive ? activeStyles : undefined)}
-              >
-                Third
-              </NavLink>
-            </li>
-          </ul>
-        </nav> */}
       </div>
     </header>
   );

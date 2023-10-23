@@ -11,7 +11,7 @@ import { AiOutlineMobile } from 'react-icons/ai';
 import { AiFillCar } from 'react-icons/ai';
 import { FaPhoneAlt } from 'react-icons/fa';
 
-const Projects = ({ openModal }) => {
+const Projects = ({ setIsModalOpen }) => {
   const [status, setStatus] = useState('individual');
 
   return (
@@ -28,8 +28,8 @@ const Projects = ({ openModal }) => {
         <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)' }}>
           <Reveal isProject={true}>
             <Project
-              openModal={openModal}
               imgName={'goose'}
+              setIsModalOpen={setIsModalOpen}
               title={'Goose Track'}
               indicator={'Done'}
               indicatorColor={'green'}
@@ -38,7 +38,7 @@ const Projects = ({ openModal }) => {
           </Reveal>
           <Reveal isProject={true}>
             <Project
-              openModal={openModal}
+              setIsModalOpen={setIsModalOpen}
               imgName={'filmoteka'}
               title={'Filmoteka'}
               indicator={'Done'}
@@ -49,7 +49,7 @@ const Projects = ({ openModal }) => {
 
           <Reveal isProject={true}>
             <Project
-              openModal={openModal}
+              setIsModalOpen={setIsModalOpen}
               imgName={'ice'}
               title={'Ice Cream'}
               indicator={'Done'}
@@ -69,7 +69,7 @@ const Projects = ({ openModal }) => {
         >
           <Reveal isProject={true}>
             <Project
-              openModal={openModal}
+              setIsModalOpen={setIsModalOpen}
               imgName={''}
               Icon={AiFillCar}
               title={'Rentify'}
@@ -80,7 +80,7 @@ const Projects = ({ openModal }) => {
           </Reveal>
           <Reveal isProject={true}>
             <Project
-              openModal={openModal}
+              setIsModalOpen={setIsModalOpen}
               imgName={''}
               Icon={AiOutlineMobile}
               title={'Flopify'}
@@ -92,31 +92,7 @@ const Projects = ({ openModal }) => {
 
           <Reveal isProject={true}>
             <Project
-              openModal={openModal}
-              imgName={''}
-              Icon={FaPhoneAlt}
-              title={'Phonebook'}
-              indicator={'Done'}
-              indicatorColor={'green'}
-              description={'Web application for managing phone contacts'}
-            />
-          </Reveal>
-
-          <Reveal isProject={true}>
-            <Project
-              openModal={openModal}
-              imgName={''}
-              Icon={BiSolidServer}
-              title={'Node REST API'}
-              indicator={'Done'}
-              indicatorColor={'green'}
-              description={'Backend for managing phone contacts'}
-            />
-          </Reveal>
-
-          <Reveal isProject={true}>
-            <Project
-              openModal={openModal}
+              setIsModalOpen={setIsModalOpen}
               imgName={''}
               Icon={PiTelevisionDuotone}
               title={'TV App (React)'}
@@ -128,13 +104,37 @@ const Projects = ({ openModal }) => {
 
           <Reveal isProject={true}>
             <Project
-              openModal={openModal}
+              setIsModalOpen={setIsModalOpen}
               imgName={''}
               Icon={PiTelevisionDuotone}
               title={'TV App (React Native)'}
+              indicator={'In progress'}
+              indicatorColor={'rgb(152, 5, 152)'}
+              description={'Web application for searching TV Shows'}
+            />
+          </Reveal>
+
+          <Reveal isProject={true}>
+            <Project
+              setIsModalOpen={setIsModalOpen}
+              imgName={''}
+              Icon={FaPhoneAlt}
+              title={'Phonebook'}
               indicator={'Done'}
               indicatorColor={'green'}
-              description={'Web application for searching TV Shows'}
+              description={'Web application for managing phone contacts'}
+            />
+          </Reveal>
+
+          <Reveal isProject={true}>
+            <Project
+              setIsModalOpen={setIsModalOpen}
+              imgName={''}
+              Icon={BiSolidServer}
+              title={'Node REST API'}
+              indicator={'Done'}
+              indicatorColor={'green'}
+              description={'Backend for managing phone contacts'}
             />
           </Reveal>
         </ul>

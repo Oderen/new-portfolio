@@ -15,10 +15,9 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BiLogoLinkedin } from 'react-icons/bi';
 import { BiLogoTelegram } from 'react-icons/bi';
 import { BiLogoGithub } from 'react-icons/bi';
-import { TbStairs } from 'react-icons/tb';
 
 const HomePage = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState('');
   const [scrollTop, setScrollTop] = useState(0);
 
   const onScroll = () => {
@@ -47,35 +46,16 @@ const HomePage = () => {
       <About />
       <div className={css['projects-container']} id="projects">
         <div className="container">
-          <Projects openModal={() => setIsModalOpen(true)} />
+          <Projects setIsModalOpen={setIsModalOpen} />
         </div>
       </div>
 
-      <div className={css['experience-container']}>
+      {/* <div className={css['experience-container']}>
         <div className="container" style={{ position: 'relative' }}>
           <section className={css.experience} style={{ color: 'white' }}>
             <Reveal width={'100%'}>
               <h2 className={css.experience__title}>Experience</h2>
             </Reveal>
-
-            <div
-              style={{
-                position: 'absolute',
-                bottom: -40,
-                right: 100,
-
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-
-                width: 600,
-                height: 600,
-              }}
-            >
-              <TbStairs
-                style={{ width: '100%', height: '100%', color: 'black' }}
-              />
-            </div>
 
             <Reveal width="700px">
               <div
@@ -109,7 +89,7 @@ const HomePage = () => {
                 >
                   <div className={css.card}>
                     <h3 className={css.card__title}>Goose Track</h3>
-                    <p className={css.card__time}>August 05 - August 27</p>
+                    <p className={css.card__time}>August 05 - 27</p>
                     <p className={css.card__text}>
                       I worked with the following tehcnologies
                     </p>
@@ -117,7 +97,7 @@ const HomePage = () => {
 
                   <div className={css.card} style={{ marginTop: 50 }}>
                     <h3 className={css.card__title}>Filmoteka</h3>
-                    <p className={css.card__time}>May 10 - May 25</p>
+                    <p className={css.card__time}>May 10 - 25</p>
                     <p className={css.card__text}>
                       I worked with the following tehcnologies
                     </p>
@@ -125,7 +105,7 @@ const HomePage = () => {
 
                   <div className={css.card} style={{ marginTop: 50 }}>
                     <h3 className={css.card__title}>Ice Cream</h3>
-                    <p className={css.card__time}>February 03 - February 25</p>
+                    <p className={css.card__time}>February 03 - 25</p>
                     <p className={css.card__text}>
                       I worked with the following tehcnologies
                     </p>
@@ -141,7 +121,7 @@ const HomePage = () => {
             </Reveal>
           </section>
         </div>
-      </div>
+      </div> */}
 
       <div className={css['contact-container']}>
         <div className="container">
@@ -209,7 +189,12 @@ const HomePage = () => {
         </div>
       </div>
 
-      {isModalOpen && <Modal closeModal={() => setIsModalOpen(false)} />}
+      {isModalOpen !== '' && (
+        <Modal
+          isModalOpen={isModalOpen}
+          closeModal={() => setIsModalOpen('')}
+        />
+      )}
     </>
   );
 };

@@ -1,0 +1,112 @@
+[
+  {
+    "img__name": "rentify",
+    "title": "Rentify",
+    "visual__link": "https://oderen.github.io/rentify/",
+    "github_link": "https://github.com/Oderen/rentify",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Redux",
+      "React Router",
+      "TypeScript"
+    ],
+    "full_description": "Rentify is an application for a company that provides car rental services. Here you can search cars by filters and add favourite ones to your collection."
+  },
+  {
+    "img__name": "",
+    "title": "Flopify",
+    "visual__link": "https://www.youtube.com/watch?v=Kb4xok6yZjg",
+    "github_link": "https://github.com/Oderen/Flopify",
+    "technologies": [
+      "React Native",
+      "Redux",
+      "Firebase",
+      "React Navigation",
+      "Native Components"
+    ],
+    "full_description": "Flopify is a mobile application for sharing a photos with others. Here you can publish your pictures and comment/like images of others."
+  },
+  {
+    "img__name": "phonebook",
+    "title": "Phonebook",
+    "visual__link": "https://oderen.github.io/phonebook/login",
+    "github_link": "https://github.com/Oderen/phonebook",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Redux",
+      "React Router"
+    ],
+    "full_description": "The entire (frontend and backend) application is developed by my own. The aim of this app is to practice authintification process and REST API architecture."
+  },
+  {
+    "img__name": "tv-app",
+    "title": "TV App (React)",
+    "visual__link": "https://oderen.github.io/tv-app/",
+    "github_link": "https://github.com/Oderen/tv-app ",
+    "technologies": ["HTML", "CSS", "JavaScript", "React", "React Router"],
+    "full_description": "TV App is an web application instrument dedicated to help you find favourites films."
+  },
+  {
+    "img__name": "",
+    "title": "TV App (React Native)",
+    "visual__link": "",
+    "github_link": "https://github.com/Oderen/tv-app-react-native",
+    "technologies": ["React Native", "Redux", "React Navigation"],
+    "full_description": "TV App is an web application instrument dedicated to help you find favourites films."
+  },
+  {
+    "img__name": "",
+    "title": "Node REST API",
+    "visual__link": "",
+    "github_link": "https://github.com/Oderen/nodejs-rest-api",
+    "technologies": ["Node.js", "Express", "MongoDB"],
+    "full_description": "Backend designed for a web application dedicated for managing phone contacts. Main features: utilizing MongoDB, abillity to attach avatar, enabling user registration via email."
+  },
+  {
+    "img__name": "goose",
+    "title": "Goose Track",
+    "visual__link": "https://userandrii.github.io/goose_track_project_front/",
+    "github_link": "https://github.com/UserAndrii/goose_track_project_front",
+    "technologies": [
+      "HTML",
+      "Styled Components",
+      "JavaScript",
+      "React",
+      "Redux",
+      "React Router",
+      "React Datepicker",
+      "Datefns"
+    ],
+    "full_description": "Goose Track is a web application designed for planning, executing, and monitoring daily tasks. Please, follow the github link and scroll down for more details."
+  },
+  {
+    "img__name": "filmoteka",
+    "title": "Filmoteka",
+    "visual__link": "https://userandrii.github.io/js-project-filmoteka/",
+    "github_link": "https://github.com/UserAndrii/js-project-filmoteka",
+    "technologies": [
+      "HTML",
+      "SCSS",
+      "JavaScript"
+    ],
+    "full_description": "Filmoteka is a web application that provides functionallities to see trend movies, all published films sorted by release date. Also here you can add/remove movies to/from 'watched' and 'queue' lists. "
+  },
+  {
+    "img__name": "ice",
+    "title": "Ice Cream",
+    "visual__link": "https://userandrii.github.io/ice-cream-project/",
+    "github_link": "https://github.com/UserAndrii/ice-cream-project",
+    "technologies": [
+      "HTML",
+      "SCSS",
+      "JavaScript"
+    ],
+    "full_description": "Ice Cream is a web application for an ice cream business. It allows a visitor to fully get aquanted with a range of products."
+  }
+]

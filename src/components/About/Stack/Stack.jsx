@@ -33,6 +33,9 @@ const Stack = () => {
             <p className={css.stack__technology}>Typescript</p>
           </li>
           <li className={css.stack__item}>
+            <p className={css.stack__technology}>Node.js</p>
+          </li>
+          <li className={css.stack__item}>
             <p className={css.stack__technology}>Express</p>
           </li>
           <li className={css.stack__item}>

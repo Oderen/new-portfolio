@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import css from './Modal.module.css';
 
@@ -6,13 +6,14 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { BiLogoGithub } from 'react-icons/bi';
 import { BsEye } from 'react-icons/bs';
 
+import projects from '../../data/projects.json';
+
 const modalRoot = document.querySelector('#modal-root');
 
-const Modal = ({ closeModal }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const Modal = ({ isModalOpen, closeModal }) => {
+  const IndProjects = projects.filter(item => item.title === isModalOpen);
 
   useEffect(() => {
-    setIsOpen(true);
     const handleKeyDown = e => {
       if (e.code === 'Escape') {
         closeModal();
@@ -24,11 +25,9 @@ const Modal = ({ closeModal }) => {
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
-      setIsOpen(false);
-
       document.body.style.overflow = 'unset';
     };
-  }, [setIsOpen, closeModal]);
+  }, [closeModal]);
 
   const handleBackdropClick = e => {
     if (e.currentTarget === e.target) {
@@ -36,16 +35,18 @@ const Modal = ({ closeModal }) => {
     }
   };
 
+  const {
+    title,
+    visual__link,
+    github_link,
+    technologies,
+    full_description,
+    img__name,
+  } = IndProjects[0];
+
   return createPortal(
     <div className={css.overlay} onClick={handleBackdropClick}>
-      <div
-        style={{
-          transform: isOpen
-            ? 'translate(-50%, -50%) scale(1)'
-            : 'translate(-50%, -20%) scale(0.2)',
-        }}
-        className={css.modal}
-      >
+      <div className={css.modal}>
         <button className={css.modal__button} onClick={closeModal}>
           <AiOutlineClose className={css.modal__closeBtn} />
         </button>
@@ -54,7 +55,7 @@ const Modal = ({ closeModal }) => {
           style={{
             position: 'relative',
             width: '100%',
-            height: 280,
+            height: 310,
             borderRadius: 20,
             marginTop: 10,
           }}
@@ -62,7 +63,11 @@ const Modal = ({ closeModal }) => {
           <img
             className={css.modal__photo}
             style={{ width: '100%', height: '100%', borderRadius: 20 }}
-            src={require('../../images/rentify.png')}
+            src={
+              img__name
+                ? require(`../../images/${img__name}.png`)
+                : require(`../../images/skeleton.jpg`)
+            }
             alt="renrify"
           />
           <div className={css['img-frontdrop']}></div>
@@ -70,10 +75,10 @@ const Modal = ({ closeModal }) => {
         <h2
           style={{ textAlign: 'center', marginTop: 20, color: 'var(--orange)' }}
         >
-          Rentify
+          {title}
         </h2>
 
-        <div>
+        <div style={{ marginTop: 10 }}>
           <div
             style={{
               display: 'flex',
@@ -82,26 +87,24 @@ const Modal = ({ closeModal }) => {
             }}
           >
             <BsEye className={css.modal__icon} />
-            <a
-              href="https://oderen.github.io/rentify/"
-              className={css.modal__link}
-            >
-              Visual Part
-            </a>
+            {visual__link ? (
+              <a href={visual__link} className={css.modal__link}>
+                Visual Part
+              </a>
+            ) : (
+              <p className={css.modal__link}>Not available</p>
+            )}
           </div>
           <div
             style={{
               display: 'flex',
-              // justifyContent: 'center',
+
               alignItems: 'center',
               marginTop: 10,
             }}
           >
             <BiLogoGithub className={css.modal__icon} />
-            <a
-              href="https://github.com/Oderen/rentify"
-              className={css.modal__link}
-            >
+            <a href={github_link} className={css.modal__link}>
               Code
             </a>
           </div>
@@ -109,15 +112,13 @@ const Modal = ({ closeModal }) => {
 
         <p className={css.modal__technologies}>Technologies:</p>
         <ul className={css.stack__list}>
-          <li className={css.stack__item}>
-            <p className={css.stack__technology}>HTML</p>
-          </li>
-          <li className={css.stack__item}>
-            <p className={css.stack__technology}>CSS</p>
-          </li>
-          <li className={css.stack__item}>
-            <p className={css.stack__technology}>JavaScript</p>
-          </li>
+          {technologies.map(technology => {
+            return (
+              <li className={css.stack__item} key={technology}>
+                <p className={css.stack__technology}>{technology}</p>
+              </li>
+            );
+          })}
         </ul>
         <p
           className={css.modal__technologies}
@@ -125,11 +126,7 @@ const Modal = ({ closeModal }) => {
         >
           Description:
         </p>
-        <p style={{ fontWeight: 400, color: 'gray' }}>
-          Rentify is an application for a company that provides car rental
-          services. Here you can search cars by filters and add favourite ones
-          to your collection.
-        </p>
+        <p style={{ fontWeight: 400, color: 'gray' }}>{full_description}</p>
       </div>
     </div>,
     modalRoot
