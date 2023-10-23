@@ -7,7 +7,7 @@ import { BiLogoGithub } from 'react-icons/bi';
 
 const Header = () => {
   return (
-    <header className={css.header} style={{ position: 'fixed', zIndex: 49 }}>
+    <header className={css.header} style={{ position: 'fixed', zIndex: 50 }}>
       <div
         className="container"
         style={{
