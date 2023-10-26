@@ -48,21 +48,20 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* <div className={css['experience-container']}>
+      <div className={css['experience-container']}>
         <div className="container" style={{ position: 'relative' }}>
           <section className={css.experience} style={{ color: 'white' }}>
             <Reveal width={'100%'}>
               <h2 className={css.experience__title}>Experience</h2>
             </Reveal>
 
-            <Reveal width="700px">
+            <Reveal width="900px">
               <div
                 style={{
                   display: 'flex',
                   marginLeft: '20%',
                   marginRight: 'auto',
-                  width: 'fit-content',
-                  height: 500,
+                  height: 'auto',
                 }}
               >
                 <div className={css.a}>
@@ -73,6 +72,8 @@ const HomePage = () => {
                   <div className={css.circle}></div>
                   <div className={css.line}></div>
                   <div className={css.circle}></div>
+                  <div className={css.line} style={{ height: '220px' }}></div>
+                  <div className={css.circle}></div>
                 </div>
                 <div
                   style={{
@@ -82,44 +83,112 @@ const HomePage = () => {
 
                     display: 'flex',
                     flexDirection: 'column',
-                    justifyContent: 'space-between',
                   }}
                 >
                   <div className={css.card}>
+                    <h3 className={css.card__title}>
+                      Internship at Baza Trainee
+                    </h3>
+                    <p className={css.card__time}>Ongoing</p>
+                  </div>
+
+                  <div className={css.card} style={{ marginTop: 87 }}>
                     <h3 className={css.card__title}>Goose Track</h3>
-                    <p className={css.card__time}>August 05 - 27</p>
+                    <p className={css.card__time}>August - September</p>
+                    <ul className={css.stack__list}>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>HTML</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>CSS</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>JavaScript</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>React</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>Redux</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>React Router</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>React Native</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>GitHub/Git</p>
+                      </li>
+                    </ul>
                     <p className={css.card__text}>
-                      I worked with the following tehcnologies
+                      Developed HTML/CSS markup for calendar component. Also I
+                      worked with a comprehensive login system for managing
+                      calendar events and dates
                     </p>
                   </div>
 
-                  <div className={css.card} style={{ marginTop: 50 }}>
+                  <div className={css.card} style={{ marginTop: 80 }}>
                     <h3 className={css.card__title}>Filmoteka</h3>
-                    <p className={css.card__time}>May 10 - 25</p>
+                    <p className={css.card__time}>May - June</p>
+                    <ul className={css.stack__list}>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>HTML</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>SCSS</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>JavaScript</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>GitHub/Git</p>
+                      </li>
+                    </ul>
+
                     <p className={css.card__text}>
-                      I worked with the following tehcnologies
+                      Developed responsive markup and implemented logic related
+                      to library section
                     </p>
                   </div>
 
-                  <div className={css.card} style={{ marginTop: 50 }}>
+                  <div className={css.card} style={{ marginTop: 80 }}>
                     <h3 className={css.card__title}>Ice Cream</h3>
-                    <p className={css.card__time}>February 03 - 25</p>
+                    <p className={css.card__time}>February - March</p>
+                    <ul className={css.stack__list}>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>HTML</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>SCSS</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>JavaScript</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>GitHub/Git</p>
+                      </li>
+                    </ul>
+
                     <p className={css.card__text}>
-                      I worked with the following tehcnologies
+                      Worked with responsive markup and component stylization,
+                      and I also created a modal window with video integration
                     </p>
                   </div>
 
-                  <div className={css.card} style={{ marginTop: 50 }}>
+                  <div className={css.card} style={{ marginTop: 80 }}>
                     <h3 className={css.card__title}>Full Stack Developer</h3>
-                    <p className={css.card__time}>Sep 2022 - July 2023</p>
-                    <p className={css.card__text}>GoIT</p>
+                    <p className={css.card__time}>Sep 2022 - Sep 2023</p>
+                    <p className={css.card__text}>
+                      Completed 1-year GoIT courses
+                    </p>
                   </div>
                 </div>
               </div>
             </Reveal>
           </section>
         </div>
-      </div> */}
+      </div>
 
       <div className={css['contact-container']}>
         <div className="container">

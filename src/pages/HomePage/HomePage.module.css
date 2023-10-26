@@ -8,7 +8,7 @@
 .experience-container {
   padding: 50px 0px;
   background-color: #1a1a1a;
-  height: 100vh;
+  height: auto;
 }
 
 .experience__title {
@@ -22,7 +22,7 @@
 
 .contact-container {
   padding: 50px 0px;
-  background-color: #1a1a1a;
+  background-color: #111;
 }
 
 .contact {
@@ -112,7 +112,7 @@
 .line {
   background-color: var(--orange);
   width: 1px;
-  height: 135px;
+  height: 180px;
 }
 
 /* Card */
@@ -185,4 +185,45 @@
 
 .socials__link:hover {
   color: var(--orange);
+}
+
+.stack__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stack__item {
+  background-color: transparent;
+
+  width: fit-content;
+
+  margin-bottom: 20px;
+  padding: 5px;
+
+  border: 1px solid rgba(231, 224, 224, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+.stack__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.stack__item:hover,
+.stack__item:focus {
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+.stack__technology {
+  color: rgba(231, 224, 224, 0.5);
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 250ms linear;
+}
+
+.stack__item:hover .stack__technology,
+.stack__item:focus .stack__technology {
+  color: white;
 }
