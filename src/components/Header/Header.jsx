@@ -50,7 +50,7 @@ const Header = () => {
         </ul>
 
         <a
-          href="https://drive.google.com/file/d/1IFSXCRe73cY3zzlW4NC_BgBvDWAWFXU_/view?usp=sharing"
+          href="https://drive.google.com/file/d/1z_beQLqC2M18054jjWmVIOvAA8NJL0QE/view?usp=sharing"
           target="_blank"
           rel="noreferrer noopener"
           className={css.cv}
