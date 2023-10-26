@@ -180,7 +180,7 @@ const HomePage = () => {
                     <h3 className={css.card__title}>Full Stack Developer</h3>
                     <p className={css.card__time}>Sep 2022 - Sep 2023</p>
                     <p className={css.card__text}>
-                      Completed 1-year GoIT courses
+                      Completed 1-year GoIT course
                     </p>
                   </div>
                 </div>
