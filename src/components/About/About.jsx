@@ -8,7 +8,15 @@ import Stack from './Stack';
 const About = () => {
   return (
     <section id="about" className={css.about}>
-      <div className="container">
+      <div
+        className="container"
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
         <h2 className={css.about__title}>About</h2>
         <div className={css['main-block']}>
           <div className={css['left-side']}>

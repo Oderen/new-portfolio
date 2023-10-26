@@ -5,7 +5,15 @@ import Reveal from '../../components/Reveal';
 const Hero = () => {
   return (
     <section className={css.hero} id="hero">
-      <div className="container">
+      <div
+        className="container"
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
         <div className={css.info}>
           <Reveal>
             <h1 className={css.info__title}>
