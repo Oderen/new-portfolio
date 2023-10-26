@@ -1,4 +1,4 @@
 # Portfolio
 
-Hello, this is my website as a visit card. Here there is everything about my
-projects and me.
+Hello, this website serves as my virtual business card where you can find
+everything about my professional background.
