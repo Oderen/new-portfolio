@@ -30,7 +30,7 @@ const Stack = () => {
             <p className={css.stack__technology}>React Native</p>
           </li>
           <li className={css.stack__item}>
-            <p className={css.stack__technology}>Typescript</p>
+            <p className={css.stack__technology}>TypeScript</p>
           </li>
           <li className={css.stack__item}>
             <p className={css.stack__technology}>Node.js</p>
