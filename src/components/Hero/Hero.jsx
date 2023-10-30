@@ -23,7 +23,7 @@ const Hero = () => {
 
           <Reveal>
             <p className={css.info__description}>
-              I am a Fronted Developer. I've been developing over 1 year and
+              I am a Fronted Developer. I've been developing for over 1 year and
               have learned a lot of fascinating things.
             </p>
           </Reveal>
