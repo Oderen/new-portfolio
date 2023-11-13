@@ -9,10 +9,19 @@ const Stack = () => {
         <h3 className={css.stack__title}>Work with</h3>
         <ul className={css.stack__list}>
           <li className={css.stack__item}>
-            <p className={css.stack__technology}>HTML</p>
+            <p className={css.stack__technology}>HTML5</p>
           </li>
           <li className={css.stack__item}>
-            <p className={css.stack__technology}>CSS</p>
+            <p className={css.stack__technology}>CSS3</p>
+          </li>
+          <li className={css.stack__item}>
+            <p className={css.stack__technology}>Styled-Components</p>
+          </li>
+          <li className={css.stack__item}>
+            <p className={css.stack__technology}>CSS-Modules</p>
+          </li>
+          <li className={css.stack__item}>
+            <p className={css.stack__technology}>Tailwindcss</p>
           </li>
           <li className={css.stack__item}>
             <p className={css.stack__technology}>JavaScript</p>
@@ -56,13 +65,13 @@ const Stack = () => {
         </h3>
         <ul className={css.stack__list}>
           <li className={css.stack__item}>
-            <p className={css.stack__technology}>MySQL</p>
+            <p className={css.stack__technology}>Next.js</p>
           </li>
           <li className={css.stack__item}>
-            <p className={css.stack__technology}>Nest</p>
+            <p className={css.stack__technology}>Websocket</p>
           </li>
           <li className={css.stack__item}>
-            <p className={css.stack__technology}>Next</p>
+            <p className={css.stack__technology}>MobX</p>
           </li>
         </ul>
       </Reveal>

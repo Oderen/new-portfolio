@@ -68,11 +68,13 @@ const HomePage = () => {
                   <div className={css.circle}></div>
                   <div className={css.line}></div>
                   <div className={css.circle}></div>
-                  <div className={css.line}></div>
-                  <div className={css.circle}></div>
-                  <div className={css.line}></div>
+                  <div className={css.line} style={{ height: '180px' }}></div>
                   <div className={css.circle}></div>
                   <div className={css.line} style={{ height: '220px' }}></div>
+                  <div className={css.circle}></div>
+                  <div className={css.line}></div>
+                  <div className={css.circle}></div>
+                  <div className={css.line} style={{ height: '190px' }}></div>
                   <div className={css.circle}></div>
                 </div>
                 <div
@@ -125,6 +127,36 @@ const HomePage = () => {
                       Developed HTML/CSS markup for calendar component. Also I
                       worked with a comprehensive login system for managing
                       calendar events and dates
+                    </p>
+                  </div>
+
+                  <div className={css.card} style={{ marginTop: 80 }}>
+                    <h3 className={css.card__title}>Houzz</h3>
+                    <p className={css.card__time}>June - August</p>
+                    <ul className={css.stack__list}>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>HTML5</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>CSS3</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>JavaScript</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>React</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>Redux</p>
+                      </li>
+                      <li className={css.stack__item}>
+                        <p className={css.stack__technology}>React Router</p>
+                      </li>
+                    </ul>
+                    <p className={css.card__text}>
+                      Developed HTML/CSS markup for verious components.
+                      Implemented logic for multiple UI using Redux and React
+                      Router
                     </p>
                   </div>
 

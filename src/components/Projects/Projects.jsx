@@ -38,6 +38,16 @@ const Projects = ({ setIsModalOpen }) => {
           </Reveal>
           <Reveal isProject={true}>
             <Project
+              imgName={'houzz'}
+              setIsModalOpen={setIsModalOpen}
+              title={'Houzz'}
+              indicator={'Done'}
+              indicatorColor={'green'}
+              description={'Web application for home-related stuff'}
+            />
+          </Reveal>
+          <Reveal isProject={true}>
+            <Project
               setIsModalOpen={setIsModalOpen}
               imgName={'filmoteka'}
               title={'Filmoteka'}

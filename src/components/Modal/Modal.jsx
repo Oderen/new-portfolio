@@ -44,6 +44,8 @@ const Modal = ({ isModalOpen, closeModal }) => {
     img__name,
   } = IndProjects[0];
 
+  console.log(github_link);
+
   return createPortal(
     <div className={css.overlay} onClick={handleBackdropClick}>
       <div className={css.modal}>
@@ -109,9 +111,13 @@ const Modal = ({ isModalOpen, closeModal }) => {
             }}
           >
             <BiLogoGithub className={css.modal__icon} />
-            <a href={github_link} className={css.modal__link}>
-              Code
-            </a>
+            {github_link ? (
+              <a href={github_link} className={css.modal__link}>
+                Code
+              </a>
+            ) : (
+              <p className={css.modal__link}>Not available</p>
+            )}
           </div>
         </div>
 

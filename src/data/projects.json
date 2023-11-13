@@ -89,33 +89,31 @@
     "img__name": "filmoteka",
     "title": "Filmoteka",
     "visual__link": "https://userandrii.github.io/js-project-filmoteka/",
-    "github_link": "https://github.com/UserAndrii/js-project-filmoteka",
-    "technologies": [
-      "HTML",
-      "SCSS",
-      "JavaScript"
-    ],
-    "full_description": "Filmoteka is a web application that provides functionallities to see trend movies, all published films sorted by release date. Also here you can add/remove movies to/from 'watched' and 'queue' lists. "
+    "github_link": "",
+    "technologies": ["HTML", "SCSS", "JavaScript"],
+    "full_description": "Filmoteka is a web application that provides functionallities to see trend movies, all published films sorted by release date and others."
   },
   {
     "img__name": "ice",
     "title": "Ice Cream",
     "visual__link": "https://userandrii.github.io/ice-cream-project/",
-    "github_link": "https://github.com/UserAndrii/ice-cream-project",
-    "technologies": [
-      "HTML",
-      "SCSS",
-      "JavaScript"
-    ],
+    "github_link": "",
+    "technologies": ["HTML", "SCSS", "JavaScript"],
     "full_description": "Ice Cream is a web application for an ice cream business. It allows a visitor to fully get aquanted with a range of products."
   },
   {
-    "img__name": "",
-    "title": "",
-    "visual__link": "",
+    "img__name": "houzz",
+    "title": "Houzz",
+    "visual__link": "https://www.houzz.com/",
     "github_link": "",
-    "technologies": [],
-    "full_description": ""
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Redux",
+      "React Router"
+    ],
+    "full_description": "Houzz is a web application that can boast of huge range of functionality regarding home renovation and design, connecting homeowners and home professionals."
   }
 ]
-
