@@ -95,7 +95,9 @@ const HomePage = () => {
                   </div>
 
                   <div className={css.card} style={{ marginTop: 87 }}>
-                    <h3 className={css.card__title}>Goose Track</h3>
+                    <div>
+                      <h3 className={css.card__title}>Goose Track</h3>
+                    </div>
                     <p className={css.card__time}>August - September</p>
                     <ul className={css.stack__list}>
                       <li className={css.stack__item}>

@@ -51,7 +51,19 @@ const Stack = () => {
             <p className={css.stack__technology}>MongoDB</p>
           </li>
           <li className={css.stack__item}>
+            <p className={css.stack__technology}>SQL</p>
+          </li>
+          <li className={css.stack__item}>
+            <p className={css.stack__technology}>Firebase</p>
+          </li>
+          <li className={css.stack__item}>
             <p className={css.stack__technology}>GitHub/Git</p>
+          </li>
+          <li className={css.stack__item}>
+            <p className={css.stack__technology}>REST/GraphQL</p>
+          </li>
+          <li className={css.stack__item}>
+            <p className={css.stack__technology}>Websocket</p>
           </li>
         </ul>
       </Reveal>
@@ -68,10 +80,10 @@ const Stack = () => {
             <p className={css.stack__technology}>Next.js</p>
           </li>
           <li className={css.stack__item}>
-            <p className={css.stack__technology}>Websocket</p>
+            <p className={css.stack__technology}>Nest.js</p>
           </li>
           <li className={css.stack__item}>
-            <p className={css.stack__technology}>MobX</p>
+            <p className={css.stack__technology}>SQL</p>
           </li>
         </ul>
       </Reveal>
