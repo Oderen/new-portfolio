@@ -64,7 +64,7 @@
     "img__name": "",
     "title": "Node REST API",
     "visual__link": "",
-    "github_link": "https://github.com/Oderen/node-rest-api",
+    "github_link": "https://github.com/Oderen/nodejs-rest-api",
     "technologies": ["Node.js", "Express", "MongoDB"],
     "full_description": "Backend designed for a web application dedicated for managing phone contacts. Main features: utilizing MongoDB, abillity to attach avatar, enabling user registration via email."
   },
