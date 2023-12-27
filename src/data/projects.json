@@ -115,5 +115,13 @@
       "React Router"
     ],
     "full_description": "Houzz is a web application that can boast of huge range of functionality regarding home renovation and design, connecting homeowners and home professionals."
+  },
+  {
+    "img__name": "mole-game",
+    "title": "Mole Game",
+    "visual__link": "https://oderen.github.io/mole-game/",
+    "github_link": "https://github.com/Oderen/mole-game",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "TypeScript"],
+    "full_description": "Web game made on OOP principles."
   }
 ]

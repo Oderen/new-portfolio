@@ -10,6 +10,7 @@ import { PiTelevisionDuotone } from 'react-icons/pi';
 import { AiOutlineMobile } from 'react-icons/ai';
 import { AiFillCar } from 'react-icons/ai';
 import { FaPhoneAlt } from 'react-icons/fa';
+import { IoGameControllerOutline } from 'react-icons/io5';
 
 const Projects = ({ setIsModalOpen }) => {
   const [status, setStatus] = useState('individual');
@@ -145,6 +146,17 @@ const Projects = ({ setIsModalOpen }) => {
               indicator={'Done'}
               indicatorColor={'green'}
               description={'Backend for managing phone contacts'}
+            />
+          </Reveal>
+          <Reveal isProject={true}>
+            <Project
+              setIsModalOpen={setIsModalOpen}
+              imgName={''}
+              Icon={IoGameControllerOutline}
+              title={'Mole Game'}
+              indicator={'In progress'}
+              indicatorColor={'rgb(152, 5, 152)'}
+              description={'Web game'}
             />
           </Reveal>
         </ul>
