@@ -51,7 +51,10 @@ const Stack = () => {
             <p className={css.stack__technology}>MongoDB</p>
           </li>
           <li className={css.stack__item}>
-            <p className={css.stack__technology}>SQL</p>
+            <p className={css.stack__technology}>PostgresSQL</p>
+          </li>
+          <li className={css.stack__item}>
+            <p className={css.stack__technology}>mySQL</p>
           </li>
           <li className={css.stack__item}>
             <p className={css.stack__technology}>Firebase</p>
@@ -81,9 +84,6 @@ const Stack = () => {
           </li>
           <li className={css.stack__item}>
             <p className={css.stack__technology}>Nest.js</p>
-          </li>
-          <li className={css.stack__item}>
-            <p className={css.stack__technology}>SQL</p>
           </li>
         </ul>
       </Reveal>
